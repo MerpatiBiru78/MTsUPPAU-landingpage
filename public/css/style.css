@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+:root{
+  --russian-violet: #4e0250ff;
+  --mardi-gras: #801a86ff;
+  --ultra-violet: #645986ff;
+  --light-green: #8fe388ff;
+  --emerald: #58bc82ff;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -6,7 +14,16 @@
   font-family: 'Poppins', sans-serif;
 }
 .body{
-    background-color: darkorchid;
+    background-color: var(--emerald);
+}
+.bg-rv{
+  background-color: var(--russian-violet);
+}
+.bg-emerald{
+  background-color: var(--emerald);
+}
+.bg-lg{
+  background-color: var(--light-green);
 }
 /* .nav-links{
   display: flex;
@@ -21,7 +38,7 @@ header, .navbar {
   z-index: 9999;
 }
 .carousel{
-  margin-top: -20.5vh;
+  margin-top: -5vh;
 }
 .nav-links li{
   list-style: none;
@@ -29,7 +46,7 @@ header, .navbar {
 }
 .nav-links li a{
   position: relative;
-  color: grey;
+  color: var(--ultra-violet);
   font-weight: 500;
   padding: 6px 0;
   text-decoration: none;
@@ -41,7 +58,7 @@ header, .navbar {
   left: 0;
   height: 3px;
   width: 0%;
-  background: darkorchid;
+  background: var(--mardi-gras);
   border-radius: 12px;
   transition: all 0.4s ease;
 }
@@ -72,5 +89,5 @@ header, .navbar {
   transform-origin: left;
 }
 .navbar-nav .nav-link.active{
-  color : darkorchid !important;
+  color : var(--mardi-gras) !important;
 }
