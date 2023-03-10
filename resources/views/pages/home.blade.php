@@ -36,9 +36,12 @@
                             <i class="fad fa-landmark"></i> Program Unggulan
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#"><i class="fad fa-medal"></i> Kelas <strong>UNGGULAN</strong></a></li>
-                            <li><a class="dropdown-item" href="#"><i class="fad fa-gauge-max"></i> Kelas SKS 2 Tahun</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="fad fa-gauge-high"></i> Kelas SKS 3 Tahun</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fad fa-medal"></i> Kelas
+                                    <strong>UNGGULAN</strong></a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fad fa-gauge-max"></i> Kelas SKS 2
+                                    Tahun</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fad fa-gauge-high"></i> Kelas SKS 3
+                                    Tahun</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -47,20 +50,41 @@
     </nav>
     <div id="carouselExampleFade" class="carousel slide carousel-fade">
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="{{ 'image/banner web 1.jpg' }}" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="{{ 'image/banner web 2.jpg' }}" class="d-block w-100" alt="...">
-          </div>
+            <div class="carousel-item active">
+                <img src="{{ 'image/banner web 1.jpg' }}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ 'image/banner web 2.jpg' }}" class="d-block w-100" alt="...">
+            </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
         </button>
-      </div>
+    </div>
+    <div class="container bg-light">
+        <div class="row mt-3 align-items-md-stretch">
+            <div class="col-md-6">
+              <div class="h-100 p-5 bg-lg text-dark rounded-3">
+                <h2>VISI</h2>
+                <p>Terwujudnya manusia yang <strong> Unggul, Utuh, dan Berakhlakul Karimah </strong> untuk 
+                    kemuliaan dan kejayaan Islam dan kaum Muslimin, kemulian dan kejayaan seluruh bangsa Indonesia dan untuk keberhasilan cita-cita
+                    kemerdekaan yaitu terwujudnya kesejahteraan dan tegaknya keadilan bagi sulurh Bangsa Indonesia tanpa terkecuali
+                </p>
+                {{-- <button class="btn btn-outline-light" type="button">Example button</button> --}}
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="h-100 p-5 bg-light border rounded-3">
+                <h2>Add borders</h2>
+                <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
+                <button class="btn btn-outline-secondary" type="button">Example button</button>
+              </div>
+            </div>
+          </div>
+    </div>
 @endsection

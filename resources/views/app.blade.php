@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="{{ 'css/style.css' }}">
     <link rel="stylesheet" href="{{ 'css/bootstrap.min.css' }}">
     <link rel="stylesheet" href="{{ 'FA6pro/css/all.min.css' }}">
+    <link rel="shortcut icon" href="{{ 'image/LOGO MTSU.ICO' }}" type="image/x-icon">
     <title>@yield('title',$title)</title>
 </head>
 <body class="body">
