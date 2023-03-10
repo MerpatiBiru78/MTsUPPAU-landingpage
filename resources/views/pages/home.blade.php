@@ -66,25 +66,49 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <div class="container bg-light">
-        <div class="row mt-3 align-items-md-stretch">
+    <div class="container bg-light ">
+        <div class="row py-3 px-5 bg-success bg-gradient align-items-md-stretch ">
+            <div class="col-md-4 "> 
+                <div class="h-100 p-5 bg-light text-dark shadow">
+                    <h2>Tentang Kami</h2>
+                    <br>
+                    <p class="text-start text-wrap" >
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius placeat quas laborum id, at porro
+                        quasi odio vitae aut ad architecto? Consectetur, atque in molestias sint porro perferendis ab at
+                        quam sequi! Ex laboriosam mollitia, ipsa veritatis quasi eos debitis quam fuga et explicabo eius
+                        deleniti doloremque sequi, eligendi consectetur temporibus repudiandae impedit, nihil consequatur
+                        facilis placeat. Iusto earum repellendus itaque error odio. Illo est pariatur atque ex possimus.
+                        Aspernatur modi sed culpa deleniti illum totam, obcaecati sapiente! Recusandae a maxime, quidem
+                        dignissimos deserunt at voluptatem veniam voluptates iste amet animi harum eius consectetur earum!
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-8 ">
+                <div class="h-100 p-5 text-dark bg-emerald shadow">
+                    <img src="" alt="Foto pak presiden" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div class="row pt-3 align-items-md-stretch justify-content-between">
             <div class="col-md-6">
-              <div class="h-100 p-5 bg-lg text-dark rounded-3">
-                <h2>VISI</h2>
-                <p>Terwujudnya manusia yang <strong> Unggul, Utuh, dan Berakhlakul Karimah </strong> untuk 
-                    kemuliaan dan kejayaan Islam dan kaum Muslimin, kemulian dan kejayaan seluruh bangsa Indonesia dan untuk keberhasilan cita-cita
-                    kemerdekaan yaitu terwujudnya kesejahteraan dan tegaknya keadilan bagi sulurh Bangsa Indonesia tanpa terkecuali
-                </p>
-                {{-- <button class="btn btn-outline-light" type="button">Example button</button> --}}
-              </div>
+                <div class="h-100 p-5 bg-lg text-dark rounded-3">
+                    <h2>VISI</h2>
+                    <p>Terwujudnya manusia yang <strong> Unggul, Utuh, dan Berakhlakul Karimah </strong> untuk
+                        kemuliaan dan kejayaan Islam dan kaum Muslimin, kemulian dan kejayaan seluruh bangsa Indonesia dan
+                        untuk keberhasilan cita-cita
+                        kemerdekaan yaitu terwujudnya kesejahteraan dan tegaknya keadilan bagi sulurh Bangsa Indonesia tanpa
+                        terkecuali
+                    </p>
+                    {{-- <button class="btn btn-outline-light" type="button">Example button</button> --}}
+                </div>
             </div>
             <div class="col-md-6">
-              <div class="h-100 p-5 bg-light border rounded-3">
-                <h2>Add borders</h2>
-                <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
-                <button class="btn btn-outline-secondary" type="button">Example button</button>
-              </div>
+                <div class="h-100 p-5 bg-light border rounded-3">
+                    <h2>MISI</h2>
+                    <p></p>
+                    {{-- <button class="btn btn-outline-secondary" type="button">Example button</button> --}}
+                </div>
             </div>
-          </div>
+        </div>
     </div>
 @endsection
