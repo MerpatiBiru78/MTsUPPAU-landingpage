@@ -1,5 +1,4 @@
 @extends('front')
-@include('partials/headerFront')
 @section('content')
     <div id="carouselExampleFade" class="carousel slide carousel-fade">
         <div class="carousel-inner">
@@ -146,7 +145,8 @@
                 </h3>
                 <form class="d-flex justify-content-end py-4 " role="search">
                     <input class="form-control me-2  w-25" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit"><i class="fad fa-search" aria-hidden="true"></i>    </button>
+                    <button class="btn btn-outline-success" type="submit"><i class="fad fa-search"
+                            aria-hidden="true"></i> </button>
                 </form>
                 <article class="blog-post">
                     <div class="card mb-3">

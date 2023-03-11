@@ -1,321 +1,261 @@
 @extends('front')
-@include('partials/headerFront')
 @section('content')
-    <div id="carouselExampleFade" class="carousel slide carousel-fade">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="{{ 'image/banner web 1.jpg' }}" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="{{ 'image/banner web 2.jpg' }}" class="d-block w-100" alt="...">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-    <div class="container bg-light ">
-        <div class="row py-3 px-5 bg-success  align-items-md-stretch ">
-
-            <div class="col-md-4 ">
-                <div class="h-100 p-5 bg-light text-dark shadow">
-                    <h2>Tentang Kami</h2>
-                    <br>
-                    <p class="text-start text-wrap">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia voluptatibus amet, fuga similique
-                        est quidem nisi necessitatibus, laborum animi ad maxime deserunt natus dolore inventore commodi
-                        ipsa, rerum aperiam! Velit unde veritatis quis distinctio libero eos blanditiis numquam laboriosam
-                        ut! Ducimus dolores facere repellendus est. Officiis, dignissimos magnam vitae molestias, ex error
-                        eligendi labore eaque aliquid officia veritatis.
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-8 ">
-                <div class="h-100 p-5 text-dark bg-emerald shadow">
-                    <img src="" alt="Foto pak presiden" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </div>
     {{-- blog --}}
     <main class="container py-3 text-bg-light">
-        {{-- ekskul --}}
-        <div id="carouselExampleControls" class="carousel carousel-dark slide mt-3" data-bs-ride="carousel">
-            <div class="carousel-inner my-3">
-                <div class="carousel-item active pe-2 ps-2">
-                    <div class="card-wrapper container-sm d-flex  justify-content-around">
-                        <div class="col-md-6 ">
-                            <div
-                                class="row g-0 border rounded overflow-hidden flex-md-row shadow-sm h-md-250 position-relative">
-                                <div class="col-md-6 p-4 d-flex flex-column position-static">
-                                    <strong class="d-inline-block mb-2 text-primary">Ektrakurikuler</strong>
-                                    <h3 class="mb-0 " style="color:brown;"><i class="fad fa-tree"></i> Pramuka</h3>
-                                    <div class="mb-1 " style="color:gold;">PAWATSMA</div>
-                                    <p class="card-text text-end">Gerakan Pramuka adalah organisasi kepanduan yang berbasis
-                                        pada kegiatan kepramukaan yang mengembangkan karakter dan keterampilan anggota muda.
-                                    </p>
-                                    <a href="#" class="stretched-link btn btn-outline-primary">Continue reading</a>
-                                </div>
-                                <div class="col-md-5 d-none d-lg-block">
-                                    <svg class="bd-placeholder-img" width="250" height="350"
-                                        xmlns="http://www.w3.org/2000/svg" role="img"
-                                        aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
-                                        focusable="false">
-                                        <title>Placeholder</title>
-                                        <rect width="100%" height="100%" fill="#55595c"></rect>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 ">
-                            <div
-                                class="row g-0 border rounded overflow-hidden flex-md-row shadow-sm h-md-250 position-relative">
-                                <div class="col-md-6 p-4 d-flex flex-column position-static">
-                                    <strong class="d-inline-block mb-2 text-primary">Ektrakurikuler</strong>
-                                    <h3 class="mb-0 " style="color:blue;"><i class="fad fa-microchip"></i> IT</h3>
-                                    <div class="mb-1 text-primary">CLUB IT</div>
-                                    <p class="card-text text-end">Klub IT adalah komunitas yang berfokus pada pengembangan
-                                        teknologi dan informasi, serta berbagi pengetahuan dan pengalaman di bidang
-                                        tersebut.</p>
-                                    <a href="#" class="stretched-link btn btn-outline-primary">Continue reading</a>
-                                </div>
-                                <div class="col-md-5 d-none d-lg-block">
-                                    <svg class="bd-placeholder-img" width="250" height="350"
-                                        xmlns="http://www.w3.org/2000/svg" role="img"
-                                        aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
-                                        focusable="false">
-                                        <title>Placeholder</title>
-                                        <rect width="100%" height="100%" fill="#55595c"></rect>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item pe-2 ps-2">
-                    <div class="card-wrapper container-sm d-flex  justify-content-between">
-                        <div class="col-md-6 ">
-                            <div
-                                class="row g-0 border rounded overflow-hidden flex-md-row shadow-sm h-md-250 position-relative">
-                                <div class="col-md-6 p-4 d-flex flex-column position-static">
-                                    <strong class="d-inline-block mb-2 text-primary">Ektrakurikuler</strong>
-                                    <h3 class="mb-0 text-dark"><i class="fad fa-chess"></i> Chess</h3>
-                                    <div class="mb-1 text-warning">Chess Club</div>
-                                    <p class="card-text text-end">Klub catur adalah kelompok penggemar catur yang berkumpul
-                                        secara rutin untuk berlatih, bermain, dan memperbaiki kemampuan bermain catur
-                                        mereka.
-                                    </p>
-                                    <a href="#" class="stretched-link btn btn-outline-primary">Continue reading</a>
-                                </div>
-                                <div class="col-md-5 d-none d-lg-block">
-                                    <svg class="bd-placeholder-img" width="250" height="350"
-                                        xmlns="http://www.w3.org/2000/svg" role="img"
-                                        aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
-                                        focusable="false">
-                                        <title>Placeholder</title>
-                                        <rect width="100%" height="100%" fill="#55595c"></rect>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev btn-outline-light" type="button"
-                    data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
         {{-- content --}}
-        <div class="row g-5">
+        <div class="row g-5 ">
             {{-- main --}}
             <div class="col-md-8">
-                <h3 class="pb-4 mb-4 fst-italic border-bottom">
-                    From the Firehose
-                </h3>
+                <!--Section: Post data-mdb-->
+                <section class="border-bottom mb-4">
+                    <div class="position-relative mb-5">
+                        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(144).jpg"
+                            class="img-fluid shadow-2-strong " alt="" />
+                        <div class="position-absolute bottom-0 ms-0 ps-4 z-20 text-bg-dark w-100">
+                            <h2> MTs Unggulan PP Amanatul Ummah </h2>
+                        </div>
+                    </div>
+                    <div class="row align-items-center mb-2">
+                        <div class="col-lg-6 text-center text-lg-start mb-3 m-lg-0">
+                            <img src="https://mdbootstrap.com/img/Photos/Avatars/img (23).jpg"
+                                class="rounded-5 shadow-1-strong me-2" height="35" alt="" loading="lazy" />
+                            <span> Published <u>15.07.2020</u> by</span>
+                            <a href="" class="text-dark">Anna</a>
+                        </div>
 
-                <article class="blog-post">
-                    <h2 class="blog-post-title mb-1">Sample blog post</h2>
-                    <p class="blog-post-meta">January 1, 2021 by <a href="#">Mark</a></p>
+                        <div class="col-lg-6 text-center text-lg-end">
+                            <button type="button" class="btn btn-primary px-3 me-1" style="background-color: #3b5998;">
+                                <i class="fab fa-facebook-f"></i>
+                            </button>
+                            <button type="button" class="btn btn-primary px-3 me-1" style="background-color: #55acee;">
+                                <i class="fab fa-twitter"></i>
+                            </button>
+                            <button type="button" class="btn btn-primary px-3 me-1" style="background-color: #0082ca;">
+                                <i class="fab fa-linkedin"></i>
+                            </button>
+                            <button type="button" class="btn btn-primary px-3 me-1">
+                                <i class="fas fa-comments"></i>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <!--Section: Post data-mdb-->
 
-                    <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap.
-                        Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
-                    <hr>
-                    <p>This is some additional paragraph placeholder content. It has been written to fill the available
-                        space and show how a longer snippet of text affects the surrounding content. We'll repeat it
-                        often
-                        to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-                    <h2>Blockquotes</h2>
-                    <p>This is an example blockquote in action:</p>
-                    <blockquote class="blockquote">
-                        <p>Quoted text goes here.</p>
-                    </blockquote>
-                    <p>This is some additional paragraph placeholder content. It has been written to fill the available
-                        space and show how a longer snippet of text affects the surrounding content. We'll repeat it
-                        often
-                        to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-                    <h3>Example lists</h3>
-                    <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the
-                        other
-                        highly repetitive body text used throughout. This is an example unordered list:</p>
-                    <ul>
-                        <li>First list item</li>
-                        <li>Second list item with a longer description</li>
-                        <li>Third list item to close it out</li>
-                    </ul>
-                    <p>And this is an ordered list:</p>
-                    <ol>
-                        <li>First list item</li>
-                        <li>Second list item with a longer description</li>
-                        <li>Third list item to close it out</li>
-                    </ol>
-                    <p>And this is a definition list:</p>
-                    <dl>
-                        <dt>HyperText Markup Language (HTML)</dt>
-                        <dd>The language used to describe and define the content of a Web page</dd>
-                        <dt>Cascading Style Sheets (CSS)</dt>
-                        <dd>Used to describe the appearance of Web content</dd>
-                        <dt>JavaScript (JS)</dt>
-                        <dd>The programming language used to build advanced Web sites and applications</dd>
-                    </dl>
-                    <h2>Inline HTML elements</h2>
-                    <p>HTML defines a long list of available inline tags, a complete list of which can be found on the
-                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer
-                            Network</a>.
+                <!--Section: Text-->
+                <section class="text-justify">
+                    <p>
+                        Lembaga Pendidikan MTs PP Amanatul Ummah (MTs PPAU-Pusat) merupakan lembaga pendidikan yang
+                        bertujuan
+                        untuk mencetak kader-kader yang berakhlak mulia dan berkualitas. MTs U PPAU memiliki sistem dan
+                        proses
+                        yang kompetitif, seperti Dauroh (Remidi), Try Out(TO) dan Pembahasan Tuntas, untuk memastikan
+                        siswanya
+                        mendapatkan nilai “A” secara jujur dan percaya diri.
                     </p>
-                    <ul>
-                        <li><strong>To bold text</strong>, use <code
-                                class="language-plaintext highlighter-rouge">&lt;strong&gt;</code>.</li>
-                        <li><em>To italicize text</em>, use <code
-                                class="language-plaintext highlighter-rouge">&lt;em&gt;</code>.</li>
-                        <li>Abbreviations, like <abbr title="HyperText Markup Language">HTML</abbr> should use <code
-                                class="language-plaintext highlighter-rouge">&lt;abbr&gt;</code>, with an optional
-                            <code class="language-plaintext highlighter-rouge">title</code> attribute for the full
-                            phrase.
-                        </li>
-                        <li>Citations, like <cite>— Mark Otto</cite>, should use <code
-                                class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
-                        <li><del>Deleted</del> text should use <code
-                                class="language-plaintext highlighter-rouge">&lt;del&gt;</code> and <ins>inserted</ins>
-                            text should use <code class="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.</li>
-                        <li>Superscript <sup>text</sup> uses <code
-                                class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript
-                            <sub>text</sub> uses <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code>.
-                        </li>
-                    </ul>
-                    <p>Most of these elements are styled by browsers with few modifications on our part.</p>
-                    <h2>Heading</h2>
-                    <p>This is some additional paragraph placeholder content. It has been written to fill the available
-                        space and show how a longer snippet of text affects the surrounding content. We'll repeat it
-                        often
-                        to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-                    <h3>Sub-heading</h3>
-                    <p>This is some additional paragraph placeholder content. It has been written to fill the available
-                        space and show how a longer snippet of text affects the surrounding content. We'll repeat it
-                        often
-                        to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-                    <pre><code>Example code block</code></pre>
-                    <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the
-                        other
-                        highly repetitive body text used throughout.</p>
-                </article>
+                    <p>
+                        Selain itu, MTs U PPAU juga menawarkan program Wajib Tahfidzul Qur'an minimal 9 Juz dalam 2 tahun
+                        dan
+                        program Wajib Mua'dalah, sehingga siswa tidak hanya memiliki kemampuan bersaing dalam penguasaan
+                        akademik program nasional tetapi juga memiliki kemampuan untuk mempelajari agama Islam serta
+                        akhlakul
+                        Karimah.
+                    </p>
+                    <p>
+                        Salah satu keunggulan MTs U PPAU adalah sebagai pesantren yang paling terjangkau di seluruh lembaga
+                        pesantren Amanatul Ummah baik di Surabaya maupun Pacet, Mojokerto. Selain itu, MTS U PPAU merupakan
+                        organisasi pusat atau induk dari MTs Unggulan Pacet, Mojokerto.
+                    </p>
+                    <img src="https://mdbootstrap.com/img/new/slides/041.jpg"
+                        class="img-fluid shadow-1-strong mb-4" alt="" />
+                    <p>
+                        Visi MTs Unggulan PP Amanatul Ummah Surabaya adalah mewujudkan manusia yang unggul, utuh dan
+                        berakhlak
+                        mulia untuk kemuliaan dan kejayaan agama dan umat Islam, untuk kemuliaan dan kejayaan seluruh bangsa
+                        Indonesia. serta menegakkan keadilan bagi seluruh rakyat Indonesia.
+                    </p>
+                    <p>
+                        Sedangkan misi MTs Unggulan PP Amanatul Ummah Surabaya adalah menerapkan sistem yang diterapkan pada
+                        lembaga pendidikan unggulan Amanatul Ummah secara tegas dan bertanggung jawab. Dengan visi dan misi
+                        yang
+                        jelas serta sistem dan proses yang kompetitif, MTs U PPAU memastikan lulusannya berhasil dan
+                        selanjutnya
+                        akan diarahkan ke MA Amanatul Ummah Surabaya yang lebih tinggi untuk bisa melanjutkan studi ke
+                        jenjang
+                        yang lebih tinggi.
+                    </p>
+                    <p>
+                        Oleh karena itu, MTs Unggulan PP Amanatul Ummah Surabaya merupakan pilihan yang tepat bagi para
+                        orang
+                        tua yang ingin anaknya menikmati pendidikan yang berkualitas dan terjangkau. Dengan program
+                        Tahfidzul
+                        Quran dan Mua'dalah, santri mampu mengembangkan ilmu dan akhlakul karimah yang sehat, sehingga mampu
+                        menjadi kader yang berguna bagi agama, bangsa dan pemerintahan. MTs U PPAU sebagai Pondok Pesantren
+                        Terjangkau dapat menjadi alternatif bagi mereka yang menginginkan pendidikan berkualitas dengan
+                        biaya
+                        terjangkau.
+                    </p>
+                    <figure class="bg-success-subtle bg-gradient shadow-sm p-3 rounded quotest ">
+                        <blockquote class="blockquote pb-2">
+                            <p>
+                                MTs U PPAU, sebuah lembaga pendidikan yang mengutamakan pembentukan karakter dan kemampuan
+                                akademik secara kompetitif. Dengan program Tahfidzul Quran dan Mua'dalah, santri diarahkan
+                                menjadi kader yang unggul, berakhlak mulia, dan siap menghadapi tantangan masa depan.
+                                Memilih MTs U PPAU sebagai alternatif pendidikan berkualitas dengan biaya terjangkau adalah
+                                keputusan yang tepat untuk masa depan yang lebih baik.
+                            </p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer mb-0 font-italic">
+                            Moh. Salim (Walisantri alumni MTs UPPAU-Pusat Thn 2024)
+                        </figcaption>
+                    </figure>
 
-                <article class="blog-post">
-                    <h2 class="blog-post-title mb-1">Another blog post</h2>
-                    <p class="blog-post-meta">December 23, 2020 by <a href="#">Jacob</a></p>
 
-                    <p>This is some additional paragraph placeholder content. It has been written to fill the available
-                        space and show how a longer snippet of text affects the surrounding content. We'll repeat it
-                        often
-                        to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-                    <blockquote>
-                        <p>Longer quote goes here, maybe with some <strong>emphasized text</strong> in the middle of it.
-                        </p>
-                    </blockquote>
-                    <p>This is some additional paragraph placeholder content. It has been written to fill the available
-                        space and show how a longer snippet of text affects the surrounding content. We'll repeat it
-                        often
-                        to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-                    <h3>Example table</h3>
-                    <p>And don't forget about tables in these posts:</p>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Upvotes</th>
-                                <th>Downvotes</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Alice</td>
-                                <td>10</td>
-                                <td>11</td>
-                            </tr>
-                            <tr>
-                                <td>Bob</td>
-                                <td>4</td>
-                                <td>3</td>
-                            </tr>
-                            <tr>
-                                <td>Charlie</td>
-                                <td>7</td>
-                                <td>9</td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <td>Totals</td>
-                                <td>21</td>
-                                <td>23</td>
-                            </tr>
-                        </tfoot>
-                    </table>
+                </section>
+                <!--Section: Text-->
 
-                    <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the
-                        other
-                        highly repetitive body text used throughout.</p>
-                </article>
+                <!--Section: Share buttons-->
+                <section class="text-center border-top border-bottom py-4 mb-4">
+                    <p><strong>Share with your friends:</strong></p>
 
-                <article class="blog-post">
-                    <h2 class="blog-post-title mb-1">New feature</h2>
-                    <p class="blog-post-meta">December 14, 2020 by <a href="#">Chris</a></p>
+                    <button type="button" class="btn btn-primary me-1" style="background-color: #3b5998;">
+                        <i class="fab fa-facebook-f"></i>
+                    </button>
+                    <button type="button" class="btn btn-primary me-1" style="background-color: #55acee;">
+                        <i class="fab fa-twitter"></i>
+                    </button>
+                    <button type="button" class="btn btn-primary me-1" style="background-color: #0082ca;">
+                        <i class="fab fa-linkedin"></i>
+                    </button>
+                    <button type="button" class="btn btn-primary me-1">
+                        <i class="fas fa-comments me-2"></i>Add comment
+                    </button>
+                </section>
+                <!--Section: Share buttons-->
 
-                    <p>This is some additional paragraph placeholder content. It has been written to fill the available
-                        space and show how a longer snippet of text affects the surrounding content. We'll repeat it
-                        often
-                        to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-                    <ul>
-                        <li>First list item</li>
-                        <li>Second list item with a longer description</li>
-                        <li>Third list item to close it out</li>
-                    </ul>
-                    <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the
-                        other
-                        highly repetitive body text used throughout.</p>
-                </article>
+                <!--Section: Author-->
+                <section class="border-bottom mb-4 pb-4">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(23).jpg"
+                                class="img-fluid shadow-1-strong rounded-5" alt="" />
+                        </div>
 
-                <nav class="blog-pagination" aria-label="Pagination">
-                    <a class="btn btn-outline-primary rounded-pill" href="#">Older</a>
-                    <a class="btn btn-outline-secondary rounded-pill disabled">Newer</a>
-                </nav>
+                        <div class="col-9">
+                            <p class="mb-2"><strong>Anna Maria Doe</strong></p>
+                            <a href="" class="text-dark"><i class="fab fa-facebook-f me-1"></i></a>
+                            <a href="" class="text-dark"><i class="fab fa-twitter me-1"></i></a>
+                            <a href="" class="text-dark"><i class="fab fa-linkedin me-1"></i></a>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio est ab iure
+                                inventore dolorum consectetur? Molestiae aperiam atque quasi consequatur aut?
+                                Repellendus alias dolor ad nam, soluta distinctio quis accusantium!
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <!--Section: Author-->
 
+                <!--Section: Comments-->
+                <section class="border-bottom mb-3">
+                    <p class="text-center"><strong>Comments: 3</strong></p>
+
+                    <!-- Comment -->
+                    <div class="row mb-4">
+                        <div class="col-2">
+                            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(24).jpg"
+                                class="img-fluid shadow-1-strong rounded-5" alt="" />
+                        </div>
+
+                        <div class="col-10">
+                            <p class="mb-2"><strong>Marta Dolores</strong></p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio est ab iure
+                                inventore dolorum consectetur? Molestiae aperiam atque quasi consequatur aut?
+                                Repellendus alias dolor ad nam, soluta distinctio quis accusantium!
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Comment -->
+                    <div class="row mb-4">
+                        <div class="col-2">
+                            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(25).jpg"
+                                class="img-fluid shadow-1-strong rounded-5" alt="" />
+                        </div>
+
+                        <div class="col-10">
+                            <p class="mb-2"><strong>Valeria Groove</strong></p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio est ab iure
+                                inventore dolorum consectetur? Molestiae aperiam atque quasi consequatur aut?
+                                Repellendus alias dolor ad nam, soluta distinctio quis accusantium!
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Comment -->
+                    <div class="row mb-4">
+                        <div class="col-2">
+                            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(26).jpg"
+                                class="img-fluid shadow-1-strong rounded-5" alt="" />
+                        </div>
+
+                        <div class="col-10">
+                            <p class="mb-2"><strong>Antonia Velez</strong></p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio est ab iure
+                                inventore dolorum consectetur? Molestiae aperiam atque quasi consequatur aut?
+                                Repellendus alias dolor ad nam, soluta distinctio quis accusantium!
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <!--Section: Comments-->
+
+                <!--Section: Reply-->
+                <section>
+                    <p class="text-center"><strong>Leave a reply</strong></p>
+
+                    <form>
+                        <!-- Name input -->
+                        <div class="form-outline mb-4">
+                            <input type="text" id="form4Example1" class="form-control" />
+                            <label class="form-label" for="form4Example1">Name</label>
+                        </div>
+
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                            <input type="email" id="form4Example2" class="form-control" />
+                            <label class="form-label" for="form4Example2">Email address</label>
+                        </div>
+
+                        <!-- Message input -->
+                        <div class="form-outline mb-4">
+                            <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                            <label class="form-label" for="form4Example3">Text</label>
+                        </div>
+
+                        <!-- Checkbox -->
+                        <div class="form-check d-flex justify-content-center mb-4">
+                            <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4"
+                                checked />
+                            <label class="form-check-label" for="form4Example4">
+                                Send me a copy of this comment
+                            </label>
+                        </div>
+
+                        <!-- Submit button -->
+                        <button type="submit" class="btn btn-primary btn-block mb-4">
+                            Publish
+                        </button>
+                    </form>
+                </section>
             </div>
+            <!--Section: Reply-->
             {{-- right-side --}}
             @include('partials.rightSideFront')
         </div>
     </main>
     {{-- footer --}}
-@include('partials.footerFront')
+    @include('partials.footerFront')
 @endsection

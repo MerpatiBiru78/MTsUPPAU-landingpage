@@ -14,13 +14,15 @@
                 <ul class="navbar-nav nav-links">
                     <li class="nav-item">
                         <a class="nav-link {{ Request::path() === '/' ? 'active' : '' }}" aria-current="page"
-                            href="#"><i class="fad fa-home"></i> Beranda</a>
+                            href="{{ route('home') }}"><i class="fad fa-home"></i> Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fad fa-users"></i> Tentang Kami</a>
+                        <a class="nav-link {{ Request::path() === 'tentangKami' ? 'active' : '' }} "
+                            href="{{ route('TentangKami') }}"><i class="fad fa-users"></i> Tentang Kami</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fad fa-images"></i> Galeri</a>
+                        <a class="nav-link {{ Request::path() === 'galeri' ? 'active' : '' }}"
+                            href="{{ route('galeri') }}"><i class="fad fa-images"></i> Galeri</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link "><i class="fad fa-medal"></i> Prestasi</a>

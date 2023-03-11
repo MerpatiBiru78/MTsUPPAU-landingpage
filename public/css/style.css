@@ -20,6 +20,10 @@
   padding : 0;
   
 }
+.quotest{
+  border-left: .25rem solid var(--light-green);
+  
+}
 .text-justify{
   text-align: justify;
 }
