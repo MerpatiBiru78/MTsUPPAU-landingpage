@@ -16,6 +16,13 @@
 .body{
     background-color: var(--emerald);
 }
+.card{
+  padding : 0;
+  
+}
+.text-justify{
+  text-align: justify;
+}
 .bg-rv{
   background-color: var(--russian-violet);
 }
