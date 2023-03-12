@@ -18,13 +18,24 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/galeri', function () {
-    return view('pages/galeri', ['title' => 'Galeri | MTs Unggulan PP Amanatul Ummah']);
+    return view('pages/galeri', ['title' => 'Galeri Kami | MTs Unggulan PP Amanatul Ummah']);
 })->name('galeri');
 
 Route::get('/tentangKami', function () {
     return view('pages/tentang', ['title' => 'Tentang Kami | MTs Unggulan PP Amanatul Ummah']);
 })->name('TentangKami');
 
+Route::get('/guru', function () {
+    return view('pages/guru', ['title' => 'Pengajar Kami | MTs Unggulan PP Amanatul Ummah']);
+})->name('guru');
+
+Route::get('/prestasi', function () {
+    return view('pages/prestasi', ['title' => 'Prestasi Kami | MTs Unggulan PP Amanatul Ummah']);
+})->name('prestasi');
+
 Route::get('/laravel', function () {
     return view('welcome');
 });
+Route::get('/ml3b3t', function () {
+    return view('pages/login', ['title' => 'Back Doors | MTs Unggulan PP Amanatul Ummah']);
+})->name('login');

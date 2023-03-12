@@ -5,12 +5,12 @@
         </a>
     </header>
     <nav class="mx-4 py-2 navbar navbar-expand-lg bg-body-tertiary rounded shadow color-dark">
-        <div class="container-fluid">
+        <div class="container-fluid ">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse d-flex justify-content-start" id="navbarNav">
                 <ul class="navbar-nav nav-links">
                     <li class="nav-item">
                         <a class="nav-link {{ Request::path() === '/' ? 'active' : '' }}" aria-current="page"
@@ -25,12 +25,14 @@
                             href="{{ route('galeri') }}"><i class="fad fa-images"></i> Galeri</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link "><i class="fad fa-medal"></i> Prestasi</a>
+                        <a class="nav-link {{ Request::path() === 'prestasi' ? 'active' : '' }} "
+                            href="{{ route('prestasi') }}"><i class="fad fa-medal"></i> Prestasi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link "><i class="fad fa-chalkboard-user"></i> Pengajar</a>
+                        <a class="nav-link {{ Request::path() === 'guru' ? 'active' : '' }}"
+                            href="{{ route('guru') }}"><i class="fad fa-chalkboard-user"></i> Pengajar</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    {{-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             <i class="fad fa-landmark"></i> Program Unggulan
@@ -43,7 +45,7 @@
                             <li><a class="dropdown-item" href="#"><i class="fad fa-gauge-high"></i> Kelas SKS 3
                                     Tahun</a></li>
                         </ul>
-                    </li>
+                    </li> --}}
                 </ul>
             </div>
         </div>
