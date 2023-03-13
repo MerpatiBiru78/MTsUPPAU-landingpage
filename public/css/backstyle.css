@@ -22,7 +22,7 @@
     max-width: 470px;
     width: 100%;
     border-radius: 12px;
-    padding: 20px 30px 200px;
+    padding: 20px 30px 230px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
@@ -47,7 +47,7 @@
     transition: all 0.6s ease;
 }
 .wrapper.active .form.login {
-    bottom: -15%;
+    bottom: -13%;
     border-radius: 35%;
     box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
 }
@@ -95,12 +95,6 @@ form .checkbox {
     align-items: center;
     gap: 10px;
 }
-.checkbox input[type="checkbox"] {
-    height: 16px;
-    width: 16px;
-    accent-color: #fff;
-    cursor: pointer;
-}
 form .checkbox label {
     cursor: pointer;
     color: #fff;
@@ -118,9 +112,4 @@ form input[type="submit"] {
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
-}
-.form.login input[type="submit"] {
-    background: #4070f4;
-    color: #fff;
-    border: none;
 }
