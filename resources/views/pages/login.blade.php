@@ -1,6 +1,11 @@
 @extends('back')
 @section('login')
     <main class="d-flex justify-content-center p-4">
+        @if ($errors->any())
+            @foreach ($errors->all() as $err)
+                <p class="alert alert-danger">{{ $err }}</p>
+            @endforeach
+        @endif
         <section class="wrapper shine">
             <div class="form signup text-light">
                 <header>Masuk</header>
@@ -30,12 +35,8 @@
                         <input type="checkbox" id="signupCheck" />
                         <label for="signupCheck text-"> Show password</label>
                     </div>
-                    <input type="submit" class="mb-5 btn bg-lg btn-success" value="Daftar" />
-                    @if ($errors->any())
-                        @foreach ($errors->all() as $err)
-                            <p class="alert alert-danger">{{ $err }}</p>
-                        @endforeach
-                    @endif
+                    {{-- <input type="submit" class="mb-5 btn bg-lg btn-success" value="Daftar" /> --}}
+                    <button class="form-control mb-5 btn bg-lg btn-success">Daftar</button>
                 </form>
             </div>
 
