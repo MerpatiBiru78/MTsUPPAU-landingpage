@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -36,6 +37,5 @@ Route::get('/prestasi', function () {
 Route::get('/laravel', function () {
     return view('welcome');
 });
-Route::get('/ml3b3t', function () {
-    return view('pages/login', ['title' => 'Back Doors | MTs Unggulan PP Amanatul Ummah']);
-})->name('login');
+Route::get('ml3b3t',[UserController::class, 'login'])->name('login');
+Route::post('ml3b3t',[UserController::class, 'regis_action'])->name('regis_action');
