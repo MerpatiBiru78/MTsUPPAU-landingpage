@@ -18,7 +18,7 @@
 
             <div class="form login shine">
                 <header>Daftar</header>
-                <form action="{{ route('regis_action') }}" method="post">
+                <form action="{{ route('regis_action') }}" method="POST">
                     @csrf
                     <input type="number" class="form-control" name="nik" placeholder="NIK" required />
                     <input type="text" class="form-control" name="nama" placeholder="Nama" required />
