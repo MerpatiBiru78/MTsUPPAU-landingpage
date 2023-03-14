@@ -19,12 +19,12 @@ class UserController extends Controller
     {
 
         $request->validate([
-            'nik' => 'required',
+            'nik' => 'required|numeric|digits:16',
             'nama' => 'required',
             'email' => 'required|email:rfc,dns',
-            'pass1' => 'required',
+            'pass1' => 'required|regex:/^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]{8,}$/',
             'pass2' => 'required|same:pass1',
-        ]);
+        ]);        
 
         // $user = new User([
         //     'nik'=>$request->nik,
