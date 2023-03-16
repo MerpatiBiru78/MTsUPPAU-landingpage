@@ -1,10 +1,27 @@
 @extends('back')
-@section('login')
+@section('content')
+
     <main class="d-flex justify-content-center p-4">
         @if ($errors->any())
-            @foreach ($errors->all() as $err)
-                <p class="alert alert-danger">{{ $err }}</p>
-            @endforeach
+            <div class="alert alert-danger shine w-25 m-lg-5 position-absolute"
+                style="display:flex;
+            z-index: 99999;">
+                @if ($errors->any())
+                    <ul>
+                        @foreach ($errors->all() as $err)
+                            <li>{{ $err }}</li>
+                        @endforeach
+                    </ul>
+                @endif
+                <span class="btn btn-danger close-btn">&times;</span>
+            </div>
+            <script>
+                const close = document.querySelector(".close-btn"),
+                    alert = document.querySelector(".alert")
+                close.addEventListener("click", () => {
+                    alert.style.display = "none";
+                });
+            </script>
         @endif
         <section class="wrapper shine">
             <div class="form signup text-light">
@@ -52,6 +69,7 @@
                     pass = document.querySelector(".pass"),
                     pass2 = document.querySelector(".pass2"),
                     login = document.querySelector("#login")
+
 
 
                 loginHeader.addEventListener("click", () => {

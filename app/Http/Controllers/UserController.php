@@ -26,12 +26,13 @@ class UserController extends Controller
             'pass2' => 'required|same:pass1',
         ]);        
 
-        // $user = new User([
-        //     'nik'=>$request->nik,
-        //     'name'=>$request->nama,
-        //     'email'=>$request->email,
-        //     'password'=>Hash::make(($request->pass1)),
-        // ]);
+        $user = new User([
+            'nik'=>$request->nik,
+            'name'=>$request->nama,
+            'email'=>$request->email,
+            'password'=>Hash::make(($request->pass1)),
+        ]);
+        $user->save();
 
         // DB::table('users')->insert(
         //     ['nik'=>$request->nik,
@@ -40,14 +41,14 @@ class UserController extends Controller
         //     'password'=>Hash::make(($request->pass1))]
         // // );
         // $user = User::created($request);
-        DB::table('users')->insert(
-            [
-                'nik' => $request->nik,
-                'name' => $request->nama,
-                'email' => $request->email,
-                'password' => Hash::make(($request->pass1))
-            ]
-        );
+        // DB::table('users')->insert(
+        //     [
+        //         'nik' => $request->nik,
+        //         'name' => $request->nama,
+        //         'email' => $request->email,
+        //         'password' => Hash::make(($request->pass1))
+        //     ]
+        // );
 
         return redirect()->route('login')->with('success', 'pendaftaran berhasil hore!!!');
     }

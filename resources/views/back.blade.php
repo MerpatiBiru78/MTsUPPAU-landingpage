@@ -12,7 +12,7 @@
     <title>@yield('title',$title)</title>
 </head>
 <body class="body">
-    @yield('login')
+    @yield('content')
     <script src="{{ 'FA6pro/js/all.min.js' }}"></script>
     <script src="{{ 'js/bootstrap.bundle.min.js' }}"></script>
 </body>

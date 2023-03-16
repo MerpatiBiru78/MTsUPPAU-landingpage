@@ -37,5 +37,8 @@ Route::get('/prestasi', function () {
 Route::get('/laravel', function () {
     return view('welcome');
 });
-Route::get('ml3b3t',[UserController::class, 'login'])->name('login');
-Route::post('ml3b3t',[UserController::class, 'regis_action'])->name('regis_action');
+Route::get('ml3b3t', [UserController::class, 'login'])->name('login');
+Route::post('ml3b3t', [UserController::class, 'regis_action'])->name('regis_action');
+Route::get('4dm1n', function () {
+    return view('pages.admin',['title'=>'selamat datang admin']);
+})->name('after auth');
