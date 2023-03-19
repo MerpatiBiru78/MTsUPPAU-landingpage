@@ -1,51 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-:root{
-  --russian-violet: #4e0250ff;
-  --mardi-gras: #801a86ff;
-  --ultra-violet: #645986ff;
-  --light-green: #8fe388ff;
-  --emerald: #58bc82ff;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+:root {
+    --poppins: "Poppins", sans-serif;
+    --lato: "Lato", sans-serif;
+
+    --light: #f9f9f9;
+    --blue: #3c91e6;
+    --light-blue: #cfe8ff;
+    --grey: #eee;
+    --dark-grey: #aaaaaa;
+    --dark: #342e37;
+    --red: #db504a;
+    --yellow: #ffce26;
+    --light-yellow: #fff2c6;
+    --orange: #fd7238;
+    --light-orange: #ffe0d3;
+    --russian-violet: #4e0250ff;
+    --mardi-gras: #801a86ff;
+    --ultra-violet: #645986ff;
+    --light-green: #8fe388ff;
+    --emerald: #58bc82ff;
 }
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
-.body{
+.body {
     background-color: var(--emerald);
 }
 
 .shine {
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5));
-  box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.5);
+    background-image: linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0.5)
+    );
+    box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.5);
 }
 
-
-.img-cover{
-  object-fit: cover;
-  object-position: center;
+.img-cover {
+    object-fit: cover;
+    object-position: center;
 }
-.card{
-  padding : 0;
-  
+.card {
+    padding: 0;
 }
-.quotest{
-  border-left: .25rem solid var(--light-green);
-  
+.quotest {
+    border-left: 0.25rem solid var(--light-green);
 }
-.text-justify{
-  text-align: justify;
+.text-justify {
+    text-align: justify;
 }
-.bg-rv{
-  background-color: var(--russian-violet);
+.bg-rv {
+    background-color: var(--russian-violet);
 }
-.bg-emerald{
-  background-color: var(--emerald);
+.bg-emerald {
+    background-color: var(--emerald);
 }
-.bg-lg{
-  background-color: var(--light-green);
+.bg-lg {
+    background-color: var(--light-green);
 }
 /* .nav-links{
   display: flex;
@@ -55,61 +71,62 @@
   border-radius: 12px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 } */
-header, .navbar {
-  position: relative;
-  z-index: 9999;
+header,
+.navbar {
+    position: relative;
+    z-index: 9999;
 }
-.carousel{
-  margin-top: -5vh;
+.carousel {
+    margin-top: -5vh;
 }
-.nav-links li{
-  list-style: none;
-  margin: 0 12px;
+.nav-links li {
+    list-style: none;
+    margin: 0 12px;
 }
-.nav-links li a{
-  position: relative;
-  color: var(--ultra-violet);
-  font-weight: 500;
-  padding: 6px 0;
-  text-decoration: none;
+.nav-links li a {
+    position: relative;
+    color: var(--ultra-violet);
+    font-weight: 500;
+    padding: 6px 0;
+    text-decoration: none;
 }
-.nav-links li a:before{
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 3px;
-  width: 0%;
-  background: var(--mardi-gras);
-  border-radius: 12px;
-  transition: all 0.4s ease;
+.nav-links li a:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: var(--mardi-gras);
+    border-radius: 12px;
+    transition: all 0.4s ease;
 }
-.nav-links li a:hover:before{
-  width: 40%;
+.nav-links li a:hover:before {
+    width: 40%;
 }
-.nav-links li.center a:before{
-  left: 50%;
-  transform: translateX(-50%);
+.nav-links li.center a:before {
+    left: 50%;
+    transform: translateX(-50%);
 }
-.nav-links li.upward a:before{
-  width: 100%;
-  bottom: -5px;
-  opacity: 0;
+.nav-links li.upward a:before {
+    width: 100%;
+    bottom: -5px;
+    opacity: 0;
 }
-.nav-links li.upward a:hover:before{
-  bottom: 0px;
-  opacity: 1;
+.nav-links li.upward a:hover:before {
+    bottom: 0px;
+    opacity: 1;
 }
-.nav-links li.forward a:before{
-  width: 100%;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.4s ease;
+.nav-links li.forward a:before {
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease;
 }
-.nav-links li.forward a:hover:before{
-  transform: scaleX(1);
-  transform-origin: left;
+.nav-links li.forward a:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
 }
-.navbar-nav .nav-link.active{
-  color : var(--mardi-gras) !important;
+.navbar-nav .nav-link.active {
+    color: var(--mardi-gras) !important;
 }
