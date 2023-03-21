@@ -24,8 +24,8 @@
                     </div>
                 </div>
                 {{-- isi --}}
-                <div class="">
-                    test
+                <div class="container">
+                    
                 </div>
             </main>
         </div>

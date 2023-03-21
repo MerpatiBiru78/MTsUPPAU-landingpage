@@ -26,14 +26,17 @@
         <section class="wrapper shine">
             <div class="form signup text-light">
                 <header>Masuk</header>
-                <form action="#" id="login">
-                    <input type="email" class="form-control" placeholder="Email address" required />
-                    <input type="password" class="form-control passLog" placeholder="Confirm Password" required />
+                {{-- {{ route('login_action') }} --}}
+                <form action="{{ route('login_action') }}" method="POST" id="login">
+                    @csrf
+                    <input type="email" class="form-control" placeholder="Email address" name="email" required />
+                    <input type="password" class="form-control passLog" name="password" placeholder="Confirm Password" required />
                     <div class="checkbox">
                         <input type="checkbox" id="signupCheckLog" />
                         <label for="signupCheck"> Show password</label>
                     </div>
-                    <input type="submit" class="btn bg-emerald btn-success" value="Masuk" />
+                    {{-- <input type="submit" class="btn bg-emerald btn-success" value="Masuk" /> --}}
+                    <button type="submit" class="btn bg-emerald btn-success"><i class="fad fa-right-to-bracket"></i> Masuk </button>
                 </form>
 
             </div>
@@ -53,7 +56,7 @@
                         <label for="signupCheck text-"> Show password</label>
                     </div>
                     {{-- <input type="submit" class="mb-5 btn bg-lg btn-success" value="Daftar" /> --}}
-                    <button class="form-control mb-5 btn bg-lg btn-success">Daftar</button>
+                    <button class="form-control mb-5 btn bg-lg btn-success"><i class="fad fa-right-to-bracket"></i> Daftar</button>
                 </form>
             </div>
 
