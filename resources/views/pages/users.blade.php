@@ -66,10 +66,11 @@
                                     <td>{{ $User->email }}</td>
                                     <td>
                                         {{-- <a class="btn btn-sm btn-warning" href="{{ route('customer.edit', $customer) }}">Edit</a> --}}
-                                        <form method="POST" action="{{ route('u53r5.destroy', $User) }}"
-                                            style="display: inline-block;">
+                                        <form method="POST" action="{{ route('del_user')}}"
+                                            style="display: inline-block;" >
                                             @csrf
                                             @method('DELETE')
+                                            <input type="hidden" name="id_user" value="{{ $User->user_id }}">
                                             <button class="btn btn-sm btn-danger"
                                                 onclick="return confirm('Delete?')">Delete</button>
                                         </form>

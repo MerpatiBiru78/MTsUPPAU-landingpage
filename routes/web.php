@@ -49,3 +49,4 @@ Route::get('logout', [UserController::class, 'logout'])->name('logout');
 //     return view('pages.users',['title' => 'Table user']);
 // })->name('admin-users');
 Route::resource('u53r5', UserTableController::class );
+Route::post('u53r5/d3str0y', [UserTableController::class, 'destroy'])->name('del_user');

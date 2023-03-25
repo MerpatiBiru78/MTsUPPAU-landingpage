@@ -45,10 +45,10 @@
                 <header>Daftar</header>
                 <form action="{{ route('regis_action') }}" method="POST">
                     @csrf
-                    <input type="number" class="form-control" name="nik" placeholder="NIK" required />
+                    <input type="number" class="form-control" name="nik" inputmode="Numeric" placeholder="NIK" required />
                     <input type="text" class="form-control" name="nama" placeholder="Nama" required />
                     <input type="email" class="form-control" name="email" placeholder="Email" required />
-                    <input type="password" class="form-control pass" name="pass1" placeholder="Password" required />
+                    <input type="password" class="form-control pass"  name="pass1" placeholder="Password" required />
                     <input type="password" class="form-control pass2" name="pass2" placeholder="Confirm Password"
                         required />
                     <div class="checkbox">

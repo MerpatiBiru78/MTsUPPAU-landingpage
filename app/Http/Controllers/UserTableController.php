@@ -13,9 +13,13 @@ class UserTableController extends Controller
      */
     public function index(Request $request)
     {
-        $data['title'] = 'Users | show all';
-        $data['Users'] = User::all();
-        return view('pages.users', $data);
+        if (Auth::check()) {
+            $data['title'] = 'Users | show all';
+            $data['Users'] = User::all();
+            return view('pages.users', $data);
+        } else {
+            return redirect()->route('home');
+        }
     }
 
     /**
@@ -39,9 +43,7 @@ class UserTableController extends Controller
      */
     public function show(User $user)
     {
-        $data['title'] = 'Users | show table';
-        $data['user'] = User::all();
-        return view('pages.users', $data);
+        //
     }
 
     /**
@@ -63,9 +65,9 @@ class UserTableController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(User $user)
+    public function destroy(Request $request)
     {
-        User::where('user_id', '=',$user['user_id'])->delete();
+        User::where('user_id', '=', $request->id_user)->delete();
         return redirect('u53r5');
     }
 }
