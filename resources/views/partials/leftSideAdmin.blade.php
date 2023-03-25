@@ -2,7 +2,7 @@
     <div class="position-sticky pt-5 sidebar-sticky mb-5" >
         <ul class="nav flex-column justify-content-around">
             <li class="nav-item">
-                <a class="nav-link active rounded-start-pill my-1 " href="#">
+                <a class="nav-link rounded-start-pill my-1 {{ Request::path() === '4dm1n' ? 'active' : '' }}" href="{{ route('after_auth')}}">
                     <span class="fad fa-house"></span>
                     Dashboard
                 </a>
@@ -19,7 +19,7 @@
             </li>
             
             <li class="nav-item">
-                <a class="nav-link rounded-start-pill my-1 " href="#">
+                <a class="nav-link rounded-start-pill my-1  {{ Request::path() === 'u53r5' ? 'active' : '' }} " href="{{ 'u53r5' }}">
                     <span class="fad fa-users"></span>
                     Users
                 </a>

@@ -2,7 +2,15 @@
     <a class="navbar-brand d-inline-flex  col-md-3 col-lg-2 ms-2 me-0 p-1 fs-6 align-self-center" href="#">
        <img src="{{ asset('image/profil/Dp.png') }}" class="rounded-circle float-start me-2" width="35px" height="35px" style="object-fit: cover;
   object-position: center;">
-        <h6 class="pt-1 text-light">@yield('name',$user['name'])</h6>
+    <?php
+        $pos = strpos(Auth::user()['name'],' ',1);
+        if($pos>0){
+            $diplayname = Str::substr(Auth::user()['name'], 0, $pos);
+        }else{
+            $displayname = Auth::user()['name'];
+        }
+    ?>
+        <h6 class="pt-1 text-light">{{ $displayname }}</h6>
     </a>
     <button class="navbar-toggler text-light bg-success position-absolute d-md-none collapsed mt-2  " type="button"
         data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"

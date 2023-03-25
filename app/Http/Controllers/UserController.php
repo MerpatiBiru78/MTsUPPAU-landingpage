@@ -65,10 +65,6 @@ class UserController extends Controller
         if (Auth::check()) {
             $data['title'] = "Selamat Datang Silahkan Login atau Daftar";
             $data['user'] = Auth::User();
-            $pos = strpos($data['user']['name'], ' ', 1);
-            if ($pos > 0) {
-                $data['user']['name'] = substr($data['user']['name'], 0, $pos);
-            }
             return view('pages.admin', $data);
         } else {
             return redirect()->route('home');

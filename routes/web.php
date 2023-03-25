@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\UserTableController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -44,6 +45,7 @@ Route::post('ml3b3t_login', [UserController::class, 'login_action'])->name('logi
 Route::get('4dm1n', [UserController::class, 'after_auth'])->name('after_auth');
 Route::get('logout', [UserController::class, 'logout'])->name('logout');
 // admin pages
-Route::get('/4dm1n/u53r5', function(){
-    return view('pages.users');
-})->name('admin-users');
+// Route::get('/4dm1n/u53r5', function(){
+//     return view('pages.users',['title' => 'Table user']);
+// })->name('admin-users');
+Route::resource('u53r5', UserTableController::class );
